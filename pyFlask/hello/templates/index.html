@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Hello Python</h1>
+    <p>Enter your name to get a greeting</p>
+    <form action="/greet" method="post">
+        <input autocomplete="off" autofocus type="text" name="name" placeholder="Enter your name">
+        <input type="submit" value="Greet">
+    </form>
+{% endblock %}
