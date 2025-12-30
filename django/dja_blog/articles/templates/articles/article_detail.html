@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ article.title }}</title>
+</head>
+<body>
+    <h1>{{ article.title }}</h1>
+    <p>Author: {{ article.author.username }}</p>
+    <p>Date: {{ article.created_at }}</p>
+    <p>{{ article.content|linebreaks }}</p>
+</body>
+</html>
